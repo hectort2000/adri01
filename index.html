@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+
+  <!-- Meta OG/Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="¡Activá tu cuenta y recibí un bono ahora!" />
+  <meta property="og:description" content="Hablá por WhatsApp con un cajero disponible y activá tu cuenta en minutos." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Favio1980/nebula/main/perro.jpeg" />
+  <meta property="og:url" content="https://rednebulaganamos.netlify.app/" />
+
+  <!-- Meta Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content=" " />
+  <meta name="twitter:description" content=" " />
+  <meta name="twitter:image" content="https://via.placeholder.com/1x1.png?text=+" />
+
+  <!-- Meta estándar -->
+  <meta name="description" content=" " />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1360284961962516');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1360284961962516&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="logo"></div>
+    <h1>¡Uníte a los que ya están ganando!</h1>
+    <h2>Hablá con nosotros por WhatsApp y activá tu cuenta en minutos</h2>
+    <div class="cta">
+      <a href="https://wa.me/3516375378?text=Hola%2C%20quiero%20comunicarme%20con%20un%20cajero%20disponible" 
+        class="cta-button" 
+        target="_blank" 
+        onclick="fbq('track', 'ContactarPorWhatsapp');">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+        Contactar por WhatsApp
+      </a>
+    </div>
+    <div class="benefits">
+      <h3>Activá tu cuenta y recibí un bono de bienvenida exclusivo.</h3>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-item">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/headset.png" alt="Atención" />
+      <span>Atención 24/7</span>
+    </div>
+    <div class="footer-item">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/money.png" alt="Pagos" />
+      <span>Pagos al instante</span>
+    </div>
+    <div class="footer-item">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/no-alcohol.png" alt="Responsable" />
+      <span>Jugá responsable (+18)</span>
+    </div>
+  </div>
+
+  <div class="notif" id="notifBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
